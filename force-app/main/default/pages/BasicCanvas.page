@@ -1,0 +1,6 @@
+<apex:page standardController="Contact">
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+This is your new Page {!contact.Name}
+<apex:canvasApp developerName="canvas_demo" entityFields="FirstName,LastName,Phone,Email" /> 
+</apex:page>

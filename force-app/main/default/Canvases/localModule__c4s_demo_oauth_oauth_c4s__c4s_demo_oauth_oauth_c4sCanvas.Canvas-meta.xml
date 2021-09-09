@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CanvasMetadata xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMethod>Get</accessMethod>
+    <canvasUrl>https://floating-coast-17771.herokuapp.com/oauth</canvasUrl>
+    <locationOptions>VF</locationOptions>
+    <samlInitiationMethod>0</samlInitiationMethod>
+</CanvasMetadata>

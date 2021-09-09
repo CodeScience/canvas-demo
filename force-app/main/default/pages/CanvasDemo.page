@@ -1,0 +1,78 @@
+<apex:page docType="html-5.0" standardStylesheets="false" sidebar="false" showHeader="false" applyHtmlTag="false" standardController="Contact">
+    <style>
+        .focus-container {
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            padding: 1em;
+            min-height: 500px;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+    </style>
+    <script type="text/javascript" src="/canvas/sdk/js/50.0/controller.js"></script>
+    <table style="max-width:1500px; margin: 0 auto;">
+        <tr>
+            <th>
+                <h2>Parent Page</h2>
+            </th>
+            <th>
+                <h2>Canvas App</h2>
+            </th>
+        </tr>
+        <tr>
+            <td style="width:50%;vertical-align: top;">
+                <div class="focus-container">
+                    <input type="text" placeholder="message" id="inputValue"></input>
+                    <button onclick="sendToCanvas();">Send To Canvas</button>
+                    <br/>
+                    <br/>
+                    <h3>Listening to canvas events</h3>
+                    <div id="messages">
+
+                    </div>
+                </div>
+            </td>
+            <td style="width:50%;">
+                <div class="focus-container">
+                    <apex:canvasApp developerName="canvas_demo" height="1000px" width="800px" entityFields="FirstName,LastName,Email,Phone" />
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <script>
+        function sendToCanvas() {
+            console.log(typeof Sfdc.canvas.controller.publish);
+            Sfdc.canvas.controller.publish({ name: 'recordchanged', payload: { message: document.querySelector('#inputValue').value } });
+            console.log('Parent sent ', { message: document.querySelector('#inputValue').value });
+        }
+        function listenToEvents() {
+            Sfdc.canvas.controller.subscribe({
+                name: 'suggestion', onData: function (e) {
+                    console.log('Parent got ', e);
+                    var para = document.createElement("p");
+                    var node = document.createTextNode('Got data at => ' + new Date().toISOString() + JSON.stringify(e));
+                    para.appendChild(node);
+                    document.querySelector('#messages').appendChild(para);
+                }
+            });
+        }
+        Sfdc.canvas(function () {
+            listenToEvents();
+        });
+
+        var lexOrigin = "https://customer-java-1440-dev-ed.lightning.force.com";
+        window.addEventListener("message", function (event) {
+            console.log(event.origin);
+            if (event.origin !== lexOrigin) {
+                // Not the expected origin: reject message!
+                return;
+            }
+            // Handle message
+            document.querySelector('#inputValue').value = event.data;
+            sendToCanvas();
+        }, false);
+    </script>
+</apex:page>

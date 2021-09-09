@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Get</accessMethod>
+        <canvasUrl>https://floating-coast-17771.herokuapp.com/oauth</canvasUrl>
+        <locations>Visualforce</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>daniel.gonzalez@codescience.com</contactEmail>
+    <label>canvas demo oauth</label>
+    <oauthConfig>
+        <callbackUrl>https://floating-coast-17771.herokuapp.com/callback.html</callbackUrl>
+        <consumerKey>3MVG9OI03ecbG2VqiwqvklznqI1Xp03wGJRf142nhZDmRjpFbA9vAYEjA8FEA4zDxTqg8PXMiJASfTXD7ZdC_</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
