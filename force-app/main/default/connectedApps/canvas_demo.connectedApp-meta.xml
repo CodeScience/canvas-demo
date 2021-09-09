@@ -3,15 +3,7 @@
     <canvasConfig>
         <accessMethod>Post</accessMethod>
         <canvasUrl>https://floating-coast-17771.herokuapp.com/signedrequest</canvasUrl>
-        <locations>Chatter</locations>
         <locations>Visualforce</locations>
-        <locations>Aura</locations>
-        <locations>Publisher</locations>
-        <locations>ChatterFeed</locations>
-        <locations>ServiceDesk</locations>
-        <locations>OpenCTI</locations>
-        <locations>MobileNav</locations>
-        <locations>PageLayout</locations>
         <samlInitiationMethod>None</samlInitiationMethod>
     </canvasConfig>
     <contactEmail>daniel.gonzalez@codescience.com</contactEmail>
@@ -26,8 +18,6 @@
         <scopes>Basic</scopes>
         <scopes>Api</scopes>
         <scopes>Web</scopes>
-        <scopes>Full</scopes>
-        <scopes>RefreshToken</scopes>
     </oauthConfig>
     <oauthPolicy>
         <ipRelaxation>ENFORCE</ipRelaxation>

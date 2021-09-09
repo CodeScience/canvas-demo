@@ -2,6 +2,6 @@
 <CanvasMetadata xmlns="http://soap.sforce.com/2006/04/metadata">
     <accessMethod>Post</accessMethod>
     <canvasUrl>https://floating-coast-17771.herokuapp.com/signedrequest</canvasUrl>
-    <locationOptions>CT,VF,AR,MP,CF,SD,CTI,MN,PL</locationOptions>
+    <locationOptions>VF</locationOptions>
     <samlInitiationMethod>0</samlInitiationMethod>
 </CanvasMetadata>
