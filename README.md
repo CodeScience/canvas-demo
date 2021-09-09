@@ -2,8 +2,7 @@
 
 Deploy this project
 
-<a href="https://githubsfdeploy.herokuapp.com?owner=CodeScience&repo=canvas-demo">
+<a href="https://githubsfdeploy.herokuapp.com?owner=CodeScience&repo=canvas-demo&ref=main">
   <img alt="Deploy to Salesforce"
-       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
-

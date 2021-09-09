@@ -10,7 +10,6 @@
     <label>canvas demo</label>
     <oauthConfig>
         <callbackUrl>https://localhost/callback</callbackUrl>
-        <consumerKey>3MVG9OI03ecbG2VqiwqvklznqI_yorgfAuWmMotycFb8cAuJmJIeUcWG4xLMWIF6UBS6wJnJr098dbrxVOuSP</consumerKey>
         <isAdminApproved>true</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>

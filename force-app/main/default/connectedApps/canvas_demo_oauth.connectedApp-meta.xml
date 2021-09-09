@@ -10,7 +10,6 @@
     <label>canvas demo oauth</label>
     <oauthConfig>
         <callbackUrl>https://floating-coast-17771.herokuapp.com/callback.html</callbackUrl>
-        <consumerKey>3MVG9OI03ecbG2VqiwqvklznqI1Xp03wGJRf142nhZDmRjpFbA9vAYEjA8FEA4zDxTqg8PXMiJASfTXD7ZdC_</consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>
