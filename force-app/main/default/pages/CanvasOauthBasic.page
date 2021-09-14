@@ -1,3 +1,0 @@
-<apex:page standardController="Contact">
-    <apex:canvasApp developerName="canvas_demo_oauth" entityFields="FirstName,LastName,Phone,Email" parameters="{p1:'value1',p2:'value2',p3:'value3'}" />
-</apex:page>
