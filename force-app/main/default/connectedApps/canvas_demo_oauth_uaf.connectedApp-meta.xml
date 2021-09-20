@@ -7,7 +7,7 @@
         <samlInitiationMethod>None</samlInitiationMethod>
     </canvasConfig>
     <contactEmail>daniel.gonzalez@codescience.com</contactEmail>
-    <label>canvas demo oauth</label>
+    <label>canvas demo oauth uaf</label>
     <oauthConfig>
         <callbackUrl>https://floating-coast-17771.herokuapp.com/callback.html</callbackUrl>
         <isAdminApproved>false</isAdminApproved>

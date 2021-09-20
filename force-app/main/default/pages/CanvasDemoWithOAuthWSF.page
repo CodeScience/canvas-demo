@@ -1,4 +1,4 @@
-<apex:page docType="html-5.0" standardStylesheets="false" sidebar="false" showHeader="false" applyHtmlTag="false" standardController="Contact">
+<apex:page standardController="Contact">
     <style>
         .focus-container {
             box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -35,12 +35,11 @@
             </td>
             <td style="width:50%;">
                 <div class="focus-container">
-                    <apex:canvasApp developerName="canvas_demo_signed_request" height="1000px" width="800px" entityFields="FirstName,LastName,Email,Phone" />
+                    <apex:canvasApp developerName="canvas_demo_oauth_wsf" height="1000px" width="800px" entityFields="FirstName,LastName,Email,Phone" />
                 </div>
             </td>
         </tr>
     </table>
-
 
     <script>
         function sendToCanvas() {

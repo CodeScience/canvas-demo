@@ -6,7 +6,11 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>CanvasDemoWithOAuth</apexPage>
+        <apexPage>CanvasDemoWithOAuthUAF</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CanvasDemoWithOAuthWSF</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
 </Profile>

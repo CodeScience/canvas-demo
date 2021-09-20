@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
     <canvasConfig>
-        <accessMethod>Post</accessMethod>
-        <canvasUrl>https://floating-coast-17771.herokuapp.com/signedrequest</canvasUrl>
+        <accessMethod>Get</accessMethod>
+        <canvasUrl>https://floating-coast-17771.herokuapp.com/oauth2</canvasUrl>
         <locations>Visualforce</locations>
         <samlInitiationMethod>None</samlInitiationMethod>
     </canvasConfig>
     <contactEmail>daniel.gonzalez@codescience.com</contactEmail>
-    <label>canvas demo signed request</label>
+    <label>canvas demo oauth wsf</label>
     <oauthConfig>
-        <callbackUrl>https://localhost/callback</callbackUrl>
-        <isAdminApproved>true</isAdminApproved>
+        <callbackUrl>https://floating-coast-17771.herokuapp.com/oauth2/callback</callbackUrl>
+        <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
@@ -22,5 +22,4 @@
         <ipRelaxation>ENFORCE</ipRelaxation>
         <refreshTokenPolicy>infinite</refreshTokenPolicy>
     </oauthPolicy>
-    <profileName>System Administrator</profileName>
 </ConnectedApp>
