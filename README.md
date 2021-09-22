@@ -9,7 +9,7 @@
 
 2. Deploy one of these canvas app samples to Heroku
   - [NodeJS Heroku Canvas App Sample](https://github.com/CodeScience/nodejs-canvas-app-sample)
-  - [Java - Gradle -Spring Boot](https://github.com/CodeScience/java-heroku-canvas-demo)
+  - [Java Spring Boot Canvas App Sample](https://github.com/CodeScience/java-heroku-canvas-demo)
 
 3. Update the 3 connected apps with the domain of your recently deployed Heroku app. Go to Setup > App Manager > edit.
   - Replace the `https://floating-coast-17771.herokuapp.com` with your Heroku app domain.
