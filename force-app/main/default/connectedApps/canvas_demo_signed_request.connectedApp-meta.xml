@@ -3,6 +3,7 @@
     <canvasConfig>
         <accessMethod>Post</accessMethod>
         <canvasUrl>https://floating-coast-17771.herokuapp.com/signedrequest</canvasUrl>
+        <lifecycleClass>CanvasAppLifecycleHandler</lifecycleClass>
         <locations>Visualforce</locations>
         <locations>Aura</locations>
         <samlInitiationMethod>None</samlInitiationMethod>
