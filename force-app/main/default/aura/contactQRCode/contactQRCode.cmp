@@ -1,7 +1,9 @@
 <aura:component implements="flexipage:availableForRecordHome, force:hasRecordId">
+    <aura:attribute name="params" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     <lightning:card>
         <div class="slds-grid slds-grid_align-center slds-p-around_small">
-            <force:canvasApp developerName="canvas_demo_signed_request" />
+            <force:canvasApp developerName="canvas_demo_signed_request" parameters="{!v.params}" />
         </div>
     </lightning:card>
 </aura:component>	

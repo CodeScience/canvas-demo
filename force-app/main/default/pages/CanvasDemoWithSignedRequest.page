@@ -35,7 +35,7 @@
             </td>
             <td style="width:50%;">
                 <div class="focus-container">
-                    <apex:canvasApp developerName="canvas_demo_signed_request" height="1000px" width="800px" entityFields="FirstName,LastName,Email,Phone" />
+                    <apex:canvasApp developerName="canvas_demo_signed_request" height="1000px" width="800px" parameters="{'customContext':'ApexPage'}" entityFields="FirstName,LastName,Email,Phone" />
                 </div>
             </td>
         </tr>
