@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
-    <custom>false</custom>
-    <pageAccesses>
-        <apexPage>CanvasDemoWithSignedRequest</apexPage>
+    <classAccesses>
+        <apexClass>SendCanvasEvent</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
+    </classAccesses>
+    <custom>false</custom>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CanvasEvent__e.Body__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.QRValidated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <pageAccesses>
         <apexPage>CanvasDemoWithOAuthUAF</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>CanvasDemoWithOAuthWSF</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CanvasDemoWithSignedRequest</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ContactContextCanvasDemo</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
 </Profile>
