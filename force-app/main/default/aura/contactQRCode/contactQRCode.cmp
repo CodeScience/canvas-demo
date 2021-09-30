@@ -1,3 +1,7 @@
 <aura:component implements="flexipage:availableForRecordHome, force:hasRecordId">
-    <force:canvasApp developerName="canvas_demo_signed_request" maxWidth="395px" />
+    <lightning:card>
+        <div class="slds-grid slds-grid_align-center slds-p-around_small">
+            <force:canvasApp developerName="canvas_demo_signed_request" />
+        </div>
+    </lightning:card>
 </aura:component>	
