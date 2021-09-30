@@ -1,4 +1,0 @@
-<apex:page docType="html-5.0" standardStylesheets="false" sidebar="false" showHeader="false" applyHtmlTag="false" standardController="Contact">
-    <apex:canvasApp developerName="canvas_demo_signed_request" height="1000px" width="800px" parameters="{'customContext': 'record'}" 
-        entityFields="FirstName,LastName,Email,Phone" />
-</apex:page>

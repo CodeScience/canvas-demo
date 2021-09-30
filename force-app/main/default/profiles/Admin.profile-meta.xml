@@ -27,8 +27,4 @@
         <apexPage>CanvasDemoWithSignedRequest</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
-    <pageAccesses>
-        <apexPage>ContactContextCanvasDemo</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
 </Profile>
