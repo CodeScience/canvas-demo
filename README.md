@@ -28,3 +28,9 @@
 `https://<mydomain>--c.visualforce.com/apex/CanvasDemoWithOAuthWSF?id=0030R00001K9dxbQAB`
 
 Note: if you are using SFDX to login into Salesforce, you will get an "invalid session" error in your canvas apps. Make sure you login via UI (e.g. https://test.salesforce.com or https://login.salesforce.com)
+
+6. A custom Canvas Lifecycle Handler has been added to support 2 additional canvas locations: 
+* A "stand alone" Visualforce Realty App available at https://<mydomain>--c.visualforce.com/apex/RealtyApp
+* A "QR code component" available in the Contact Record Page
+
+Note that the latest support for these locations is only available in the NodeJS Sample App. So, only use the Java Sample App for basic demos.

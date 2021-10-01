@@ -28,6 +28,9 @@ public with sharing class CanvasAppLifecycleHandler implements Canvas.CanvasLife
 
         // Override app URL, replacing portion after domain with '/alternatePath'
         // app.setCanvasUrlPath('/alternatePath');
+        if(env.getLocationUrl().contains('RealtyApp')) {
+            app.setCanvasUrlPath('/realty');
+        }
 
         // Code goes here to customize behavior when the app is rendered
         // Add Name, BillingAddress and YearStarted to fields 
