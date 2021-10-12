@@ -1,3 +1,16 @@
 <apex:page>
-    <apex:canvasApp developerName="canvas_demo_signed_request" />
+    <apex:canvasApp developerName="canvas_demo_signed_request" width="100%" onCanvasAppLoad="publishSize();" />
+    <script type="text/javascript" src="/canvas/sdk/js/50.0/controller.js"></script>
+    <script>
+        function publishSize() {
+            var size = {
+                width: window.outerWidth,
+                height: window.outerHeight
+            };
+            Sfdc.canvas.controller.publish({ name: 'screensize', payload: { size: size } });
+        }
+        Sfdc.canvas(function () {
+            publishSize();
+        });
+    </script>
 </apex:page>
