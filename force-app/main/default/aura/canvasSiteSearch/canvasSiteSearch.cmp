@@ -1,0 +1,3 @@
+<aura:component implements="forceCommunity:searchInterface,forceCommunity:availableForAllPageTypes">
+    <force:canvasApp developerName="canvas_demo_signed_request" width="100%" />
+</aura:component>	

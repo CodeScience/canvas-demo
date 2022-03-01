@@ -2,7 +2,7 @@
 <ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
     <canvasConfig>
         <accessMethod>Post</accessMethod>
-        <canvasUrl>https://floating-coast-17771.herokuapp.com/signedrequest</canvasUrl>
+        <canvasUrl>https://cs-nodejs-canvas-demo.herokuapp.com/signedrequest</canvasUrl>
         <lifecycleClass>CanvasAppLifecycleHandler</lifecycleClass>
         <locations>Visualforce</locations>
         <locations>Aura</locations>

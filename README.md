@@ -12,7 +12,7 @@
   - [Java Spring Boot Canvas App Sample](https://github.com/CodeScience/java-heroku-canvas-demo)
 
 3. Update the 3 connected apps with the domain of your recently deployed Heroku app. Go to Setup > App Manager > edit.
-  - Replace the `https://floating-coast-17771.herokuapp.com` with your Heroku app domain.
+  - Replace the `https://cs-nodejs-canvas-demo.herokuapp.com` with your Heroku app domain.
   - Take note of the Consumer Key and Consumer Secret as you will need to update your Heroku app with the following environment variables:
 
 * canvas_demo_signed_request: SIGNED_REQUEST_CONSUMER_SECRET
